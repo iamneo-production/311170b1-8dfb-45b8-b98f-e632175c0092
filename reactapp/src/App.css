@@ -13,9 +13,13 @@ body {
   font-size: 16px;
 }
 
+a {
+  color: black;
+}
+
 .wrapper {
-  width: 80%;
-  margin: auto;
+  max-width: 470px;
+  margin: 30px auto;
 }
 
 .squeeze_header h2 {
@@ -24,30 +28,18 @@ body {
   font-family: "Inter";
 }
 
+#main_title a {
+  text-decoration: none;
+  color: black
+}
+
 .squeeze_header p {
   text-align: center;
   margin-top: -10px;
 }
 
-.squeeze_form {
-  display: flex;
-  gap: 50px;
-}
-
-#register_signup,
-#login_ {
-  font-size: 20px;
+.not_a {
   text-align: center;
-}
-
-#register_signup:hover,
-#login_:hover {
-  text-decoration: underline;
-}
-
-.admin_login_text {
-  max-width: 150px;
-  align-self: center;
 }
 
 p {
@@ -115,18 +107,13 @@ button[type=submit] {
   text-align: center;
 }
 
-hr {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-.admin_login_text {
-  text-align: center;
-  top: 50%;
-  left: 50%;
+#login_,
+#register_ {
+  font-size: 25px;
 }
 
 @media only screen and (max-width: 600px) {
-  .squeeze_form {
-    display: block;
+  .wrapper {
+    padding: 15px;
   }
 }
