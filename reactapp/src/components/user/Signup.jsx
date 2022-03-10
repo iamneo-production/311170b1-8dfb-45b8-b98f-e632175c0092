@@ -1,4 +1,4 @@
-const Squeeze = () => {
+const Signup = () => {
   return (
     <div className="wrapper">
       <div className="squeeze_wrapper">
@@ -25,28 +25,10 @@ const Squeeze = () => {
               <button type="submit" id="submitButton">Register</button>
             </form>
           </div>
-          <hr style={{ "marginTop": "40px", "marginBottom": "40px" }} />
-          <div className="login">
-            <form>
-              <h4 id="login_">Login</h4>
-              <label>Email</label>
-              <input type="email" id="email" placeholder="Email" />
-              <label>Password</label>
-              <input type="password" id="password" placeholder="Password" />
-              <button type="submit" id="loginButton">Login</button>
-            </form>
-          </div>
-          <hr style={{ "marginTop": "40px", "marginBottom": "40px" }} />
-          <div className="admin_login_text">
-            <button id="admin_button" type="submit">Admin</button>
-            <p style={{ "fontSize": "13px", "fontWeight": 900 }}>
-              Click to login as admin
-            </p>
-          </div>
         </div>
       </div>
-    </div >
+    </div>
   )
 }
 
-export default Squeeze;
+export default Signup;
