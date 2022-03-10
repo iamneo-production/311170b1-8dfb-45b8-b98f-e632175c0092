@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = WebAppTest
+build_property.ProjectDir = D:\.NET Apps\BikeLoan\nunit\test\WebAppTest\
