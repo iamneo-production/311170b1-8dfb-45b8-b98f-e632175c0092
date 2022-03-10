@@ -1,7 +1,4 @@
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
 
@@ -20,7 +17,7 @@ const Signup = () => {
             <form>
               <h4 id="register_">Register</h4>
               <label>Enter admin/user</label>
-              <input type="text" id="admin/user" placeholder="Admin/User" />
+              <input type="text" id="userRole" placeholder="Admin/User" />
               <label>Username</label>
               <input type="text" id="username" placeholder="Username" />
               <label>Email</label>

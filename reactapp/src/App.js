@@ -1,12 +1,11 @@
-import Squeeze from "./components/Squeeze";
 import './App.css';
 import Login from "./components/user/Login";
 import Signup from "./components/user/Signup";
+import Dashboard from "./components/admin/Dashboard";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
           <Route exact path='/' element={< Login />}></Route>
           <Route path='user/signup' element={< Signup />}></Route>
           <Route path='user/login' element={< Login />}></Route>
+          <Route path='admin/dashboard' element={< Dashboard />}></Route>
         </Routes>
       </div>
     </Router>
