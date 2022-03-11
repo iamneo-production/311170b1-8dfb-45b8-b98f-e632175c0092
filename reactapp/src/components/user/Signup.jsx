@@ -17,17 +17,17 @@ const Signup = () => {
             <form>
               <h4 id="register_">Register</h4>
               <label>Enter admin/user</label>
-              <input type="text" id="userRole" placeholder="Admin/User" />
+              <input type="text" id="admin/user" placeholder="Admin/User" required />
               <label>Username</label>
-              <input type="text" id="username" placeholder="Username" />
+              <input type="text" id="username" placeholder="Username" required />
               <label>Email</label>
-              <input type="email" id="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" required />
               <label>Mobile number</label>
-              <input type="text" id="mobileNumber" placeholder="Mobile number" />
+              <input type="text" id="mobileNumber" placeholder="Mobile number" required />
               <label>Password</label>
               <input type="password" id="password" placeholder="Password" />
               <label>Confirm password</label>
-              <input type="password" id="confirmPassword" placeholder="Confirm password" />
+              <input type="password" id="confirmPassword" placeholder="Confirm password" required />
               <button type="submit" id="submitButton">Register</button>
             </form>
           </div>

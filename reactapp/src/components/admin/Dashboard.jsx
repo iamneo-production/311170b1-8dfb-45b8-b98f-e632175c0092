@@ -1,22 +1,22 @@
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Signup = () => {
+const Dashboard = () => {
   return (
-    <div className="wrapper">
-      <div className="squeeze_wrapper">
-        <div className="squeeze_header">
-          <h2 id="main_title">
-            Dashboard
-          </h2>
+    <div>
+      <header className="navbar">
+        <div className="navbar__title navbar__item">Bike Loan</div>
+        <div className="navbar__item" id="adminAppliedLoans">
+          <Link to="/">Applied Loan</Link>
         </div>
-        <div className="squeeze_form">
-
+        <div className="navbar__item" id="AdminLoanDetails">
+          <Link to="/">Loan Details</Link>
         </div>
-      </div>
-    </div>
+        <div className="navbar__item" id="logout">
+          <Link to="/">Logout</Link>
+        </div>
+      </header>
+    </div >
   )
 }
 
-export default Signup;
+export default Dashboard;
