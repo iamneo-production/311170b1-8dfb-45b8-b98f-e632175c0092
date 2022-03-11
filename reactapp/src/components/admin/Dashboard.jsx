@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DisplayUser from "./DisplayUser";
 
 const Dashboard = () => {
   return (
@@ -15,8 +16,11 @@ const Dashboard = () => {
           <Link to="/">Logout</Link>
         </div>
       </header>
+      <div className="dashboard_content">
+        <DisplayUser />
+      </div>
     </div >
-  )
+  );
 }
 
 export default Dashboard;
