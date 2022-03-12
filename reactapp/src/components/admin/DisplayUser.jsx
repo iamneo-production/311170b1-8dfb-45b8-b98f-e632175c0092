@@ -2,12 +2,12 @@ const DisplayUser = () => {
   return (
     <div className="display_users_wrapper">
       <div className="count_of_applications">
-        <p><strong>2</strong> applicant(s) to verify</p>
+        <p id="count_number"><strong>2</strong> applicant(s) to verify</p>
       </div>
       <div className="applicants_list">
         <div className="applicant_deets">
-          <p style={{ "color": "black", "fontSize": "25px" }}>
-            <strong>Varshith Thota</strong>
+          <p id="applicant_name">
+            Varshith Thota
           </p>
           <p>
             Applicant email: varshiththota@bikeloan.com
@@ -21,8 +21,8 @@ const DisplayUser = () => {
         </div>
         <br />
         <div className="applicant_deets">
-          <p style={{ "color": "black", "fontSize": "25px" }}>
-            <strong>Jennifer Lopez</strong>
+          <p id="applicant_name">
+            Jennifer Lopez
           </p>
           <p>
             Applicant email: jenniferlpz@bikeloan.com
