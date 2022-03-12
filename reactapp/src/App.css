@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap");
 
 body {
   font-family: "Inter";
@@ -26,12 +26,12 @@ a {
 .squeeze_header h2 {
   font-size: 40px;
   text-align: center;
-  font-family: 'BhuTuka Expanded One', cursive
+  font-family: "BhuTuka Expanded One", cursive;
 }
 
 #main_title a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .squeeze_header p {
@@ -56,25 +56,26 @@ p {
   color: #707070;
 }
 
-label  {
+label {
   margin-top: 25px;
   color: #272424;
   font-size: 16px;
 }
 
-label, p {
+label,
+p {
   display: block;
 }
 
-input[type=text],
-input[type=email],
-input[type=password] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   box-sizing: border-box;
   width: 100%;
   border: 1px solid;
   border-radius: 5px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-  height: 50px; 
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  height: 50px;
   margin-top: 15px;
   padding: 15px;
   font-size: 17px;
@@ -86,7 +87,8 @@ form {
   margin-top: 25px;
 }
 
-button {
+button,
+select {
   border: 1px solid #ccc;
   padding: 10px 15px;
   border-radius: 5px;
@@ -94,6 +96,11 @@ button {
   font-size: 17px;
   color: #777;
   cursor: pointer;
+}
+
+select {
+  width: 100%;
+  outline: 0;
 }
 
 .username_email {
@@ -116,7 +123,6 @@ button {
   border-bottom-right-radius: 5px;
 }
 
-
 #admin_button {
   width: 100%;
   background-image: linear-gradient(to bottom, #8a20e0 0%, #a608c5 100%);
@@ -127,7 +133,7 @@ button {
   text-align: center;
 }
 
-button[type=submit] {
+button[type="submit"] {
   width: 100%;
   background-image: linear-gradient(to bottom, #3ba1e6 0%, #257bdf 100%);
   border: 0;
@@ -138,7 +144,7 @@ button[type=submit] {
   font-family: "Inter";
 }
 
-button[type=submit]:hover {
+button[type="submit"]:hover {
   opacity: 0.9;
 }
 
@@ -165,9 +171,9 @@ button[type=submit]:hover {
 
 .navbar__title {
   margin-right: auto;
-  font-size: 150%;
+  font-size: 20px;
   padding: 12px 16px;
-  font-family: 'BhuTuka Expanded One', cursive;
+  font-family: "BhuTuka Expanded One", cursive;
   font-weight: 900;
 }
 
@@ -222,6 +228,62 @@ button[type=submit]:hover {
 .approve_btn:hover,
 .reject_btn:hover {
   opacity: 0.9;
+}
+
+.addloan_wrapper {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.addloan_form {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+}
+
+.file_uploads {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.doc_button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #777;
+}
+
+.doc_button input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit_documents {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#uploadDocumentsButton {
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #18b991 0%, #0ca57f 100%);
 }
 
 @media only screen and (max-width: 600px) {
