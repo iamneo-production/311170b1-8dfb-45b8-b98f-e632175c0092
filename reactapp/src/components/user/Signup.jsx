@@ -18,10 +18,11 @@ const Signup = () => {
               <h4 id="register_">Register</h4>
               <label>Enter admin/user</label>
               <input type="text" id="admin/user" placeholder="Admin/User" required />
-              <label>Username</label>
-              <input type="text" id="username" placeholder="Username" required />
-              <label>Email</label>
-              <input type="email" id="email" placeholder="Email" required />
+              <label>Identity</label>
+              <div className="username_email">
+                <input type="text" id="username" placeholder="Username" required />
+                <input type="email" id="email" placeholder="Email" required />
+              </div>
               <label>Mobile number</label>
               <input type="text" id="mobileNumber" placeholder="Mobile number" required />
               <label>Password</label>
