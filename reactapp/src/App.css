@@ -286,6 +286,27 @@ button[type="submit"]:hover {
   background-image: linear-gradient(to bottom, #18b991 0%, #0ca57f 100%);
 }
 
+#track_application_text,
+#profile_info_text {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#trackButton {
+  background-image: linear-gradient(to bottom, #18b991 0%, #0ca57f 100%);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.profiles_content {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  gap: 30%;
+  padding: 30px;
+}
+
 @media only screen and (max-width: 600px) {
   .wrapper {
     padding: 18px;

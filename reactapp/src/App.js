@@ -3,6 +3,8 @@ import Login from "./components/user/Login";
 import Signup from "./components/user/Signup";
 import Dashboard from './components/admin/Dashboard';
 import AddLoan from "./components/user/AddLoan";
+import ViewLoan from './components/user/ViewLoan';
+import ViewProfile from './components/user/ViewProfile';
 import {
   BrowserRouter as Router,
   Routes,
@@ -18,6 +20,8 @@ function App() {
           <Route path='user/signup' element={< Signup />}></Route>
           <Route path='user/login' element={< Login />}></Route>
           <Route path='user/addLoan' element={< AddLoan />}></Route>
+          <Route path='user/viewLoan' element={< ViewLoan />}></Route>
+          <Route path='user/getProfile' element={< ViewProfile />}></Route>
           <Route path='admin/getAllLoans' element={< Dashboard />}></Route>
         </Routes>
       </div>

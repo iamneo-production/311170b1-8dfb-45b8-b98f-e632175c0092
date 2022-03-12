@@ -12,8 +12,8 @@ const AddLoan = () => {
               <input type="text" id="enterName" placeholder="Name" required />
               <label>Email</label>
               <input type="email" id="enterEmail" placeholder="name@domain" required />
-              <label>Applicant salary</label>
-              <input type="text" id="enterSalary" placeholder="ex: $100,000/annum" required />
+              <label>Applicant salary (per annum)</label>
+              <input type="text" id="enterSalary" placeholder="ex: $100,000" required />
               <label>Loan amount</label>
               <input type="text" id="enterAmount" placeholder="ex: $100,000" required />
               <label for="file_type">Pick a type:</label>
@@ -29,7 +29,7 @@ const AddLoan = () => {
               <label>Mobile number</label>
               <input type="text" id="enterMobile" placeholder="Mobile number" required />
               <label>Aadhar number</label>
-              <input type="text" id="enterAadharNo" placeholder="#### #### ####" required />
+              <input type="text" id="enterAadharNo" placeholder="#### #### #### ####" required />
               <label>PAN number</label>
               <input type="text" id="enterPanNo" placeholder="#######" required />
               <label>Loan repayment duration (in months)</label>
