@@ -274,13 +274,20 @@ button[type="submit"]:hover {
 }
 
 .submit_documents {
+  display: flex;
   width: 50%;
-  margin: 0 auto;
   text-align: center;
 }
 
 #uploadDocumentsButton {
-  width: 250px;
+  width: 50%;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 40px;
+  background-image: linear-gradient(to bottom, #772ce8 0%, #6600ff 100%);
+}
+
+#applyLoanButton {
   text-align: center;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, #18b991 0%, #0ca57f 100%);

@@ -1,13 +1,14 @@
+import React from "react";
 import DisplayUser from "./DisplayUser";
 import Navbar from "./Navbar";
 
-const Dashboard = () => {
-  return (
-    <div className="dashboard_content">
-      <Navbar />
-      <DisplayUser />
-    </div>
-  );
+export default class Dashboard extends React.Component {
+  render() {
+    return (
+      <div className="dashboard_content" >
+        <Navbar />
+        <DisplayUser />
+      </div>
+    );
+  }
 }
-
-export default Dashboard;
