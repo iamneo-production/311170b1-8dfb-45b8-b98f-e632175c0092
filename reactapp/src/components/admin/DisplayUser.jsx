@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Dashboard extends React.Component {
+export default class DisplayUser extends React.Component {
 
   applicant = {
     name: ["Varshith Thota", "Jennifer Lopez"],
