@@ -5,6 +5,8 @@ import Dashboard from './components/admin/Dashboard';
 import AddLoan from "./components/user/AddLoan";
 import ViewLoan from './components/user/ViewLoan';
 import ViewProfile from './components/user/ViewProfile';
+import ApplySuccess from './components/user/ApplySuccess';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -22,6 +24,7 @@ function App() {
           <Route path='user/addLoan' element={< AddLoan />}></Route>
           <Route path='user/viewLoan' element={< ViewLoan />}></Route>
           <Route path='user/getProfile' element={< ViewProfile />}></Route>
+          <Route path='user/success' element={< ApplySuccess />}></Route>
           <Route path='admin/getAllLoans' element={< Dashboard />}></Route>
         </Routes>
       </div>

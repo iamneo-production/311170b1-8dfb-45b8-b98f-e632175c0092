@@ -1,6 +1,13 @@
 import React from "react";
 
 export default class Dashboard extends React.Component {
+
+  applicant = {
+    name: ["Varshith Thota", "Jennifer Lopez"],
+    email: ["varshiththota@bikeloan.com", "jenniferlpz@bikeloan.com"],
+    loan_amt: ["10,000,000", "100,000,000"]
+  }
+
   render() {
     return (
       <div className="display_users_wrapper">
@@ -10,13 +17,13 @@ export default class Dashboard extends React.Component {
         <div className="applicants_list">
           <div className="applicant_deets">
             <p id="applicant_name">
-              Varshith Thota
+              {this.applicant.name[0]}
             </p>
             <p>
-              Applicant email: varshiththota@bikeloan.com
+              Applicant email: {this.applicant.email[0]}
             </p>
             <p>
-              Loan amount: 10,000,000
+              Loan amount: {this.applicant.loan_amt[0]}
             </p>
             <button className="download_files_btn">Download files</button> &nbsp;
             <button className="approve_btn">Approve</button> &nbsp;
@@ -25,13 +32,13 @@ export default class Dashboard extends React.Component {
           <br />
           <div className="applicant_deets">
             <p id="applicant_name">
-              Jennifer Lopez
+              {this.applicant.name[1]}
             </p>
             <p>
-              Applicant email: jenniferlpz@bikeloan.com
+              Applicant email: {this.applicant.email[1]}
             </p>
             <p>
-              Loan amount: 100,000,000
+              Loan amount: {this.applicant.loan_amt[1]}
             </p>
             <button className="download_files_btn">Download files</button> &nbsp;
             <button className="approve_btn">Approve</button> &nbsp;
