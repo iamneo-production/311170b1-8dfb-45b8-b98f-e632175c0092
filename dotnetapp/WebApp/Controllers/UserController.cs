@@ -5,6 +5,7 @@ using Microsoft.AspNetCore;
 using DataSource;
 using System.Web.Http;
 using System.Data.Entity.Validation;
+using System.Linq;
 
 namespace WebApp.Controllers
 {
@@ -28,6 +29,32 @@ namespace WebApp.Controllers
             {
                 Console.WriteLine(ex);
                 return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex);
+            }
+        }
+
+
+        [Route("user/login")]
+        [HttpPost]
+        public HttpResponseMessage login([FromBody] Login login)
+        {
+            AuthController auth = new AuthController();
+            System.Diagnostics.Debug.WriteLine(login.email);
+            System.Diagnostics.Debug.WriteLine(login.password);
+
+            if (auth.isUserPresent(login))
+            {
+                var message = Request.CreateResponse(HttpStatusCode.OK, "User");
+                var user = entities.Users.FirstOrDefault(us => us.email == login.email);
+                var admin = entities.Admins.FirstOrDefault(ad => ad.email == login.email);
+                if (user != null)
+                {
+                    message.Headers.Location = new Uri(Request.RequestUri + "Valid user");
+                }
+                return message;
+            }
+            else
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Invalid user");
             }
         }
     }
