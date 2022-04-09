@@ -2,10 +2,14 @@
 
 using System.Net.Http;
 using System.Web.Http;
-using DataAccess;
+using DataSource;
+using System.Net;
+using System;
+using System.Data.Entity.Validation;
 
 namespace WebApp.Controllers
 {
+
     public class UserController : ApiController
     {
         private static BikeLoanDBEntities entities = new BikeLoanDBEntities();

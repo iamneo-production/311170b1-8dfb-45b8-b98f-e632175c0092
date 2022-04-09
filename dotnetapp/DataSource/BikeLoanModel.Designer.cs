@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Virtusa Internship\project\311170b1-8dfb-45b8-b98f-e632175c0092\dotnetapp\DataAccess\BikeLoanEntity.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Virtusa Internship\project\311170b1-8dfb-45b8-b98f-e632175c0092\dotnetapp\DataSource\BikeLoanModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

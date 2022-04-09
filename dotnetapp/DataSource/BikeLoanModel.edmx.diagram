@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f851be3861c24974882996479840c180" Name="Diagram1">
+      <Diagram DiagramId="6e8343a0241844f381b4ab18925853c1" Name="Diagram1">
         <EntityTypeShape EntityType="BikeLoanDBModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BikeLoanDBModel.Document" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BikeLoanDBModel.LoanApplication" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

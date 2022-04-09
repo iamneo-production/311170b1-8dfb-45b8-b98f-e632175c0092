@@ -7,17 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DataAccess
+namespace DataSource
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Document
     {
-        public string email { get; set; }
-        public string password { get; set; }
-        public string username { get; set; }
-        public string mobileNumber { get; set; }
-        public string userRole { get; set; }
+        public int documentid { get; set; }
+        public string documentType { get; set; }
+        public byte[] documentupload { get; set; }
     }
 }
