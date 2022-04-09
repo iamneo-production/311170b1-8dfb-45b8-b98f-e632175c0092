@@ -1,19 +1,20 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Net.Http;
-using System.Web.Http;
-using DataAccess;
 using System.Net;
-using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore;
+using DataSource;
+using System.Web.Http;
+using System.Data.Entity.Validation;
 
 namespace WebApp.Controllers
 {
     public class UserController : ApiController
     {
+        
         private static BikeLoanDBEntities entities = new BikeLoanDBEntities();
         [Route("user/signup")]
         [HttpPost]
-        public HttpResponseMessage signup([FromBody] User user)
+        public HttpResponseMessage signup([FromBody]User user)
         {
             try
             {
