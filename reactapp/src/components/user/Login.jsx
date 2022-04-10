@@ -60,13 +60,13 @@ export default function Login() {
             </form>
           </div>
           <br />
-          <div className="not_a" style={{ display: "grid", textAlign: "left" }}>
+          <div className="not_a">
             <p >
               New here? &nbsp;
-              <Link to="/user/signup" style={{ textDecoration: "none" }}>Signup</Link>
+              <Link to="/user/signup">User Signup</Link>
             </p>
             <p>
-              Not a User? &nbsp; <Link to="/admin/login" style={{ textDecoration: "none" }}>Admin Login</Link> <br />
+              Not a User? &nbsp; <Link to="/admin/login">Admin Login</Link> <br />
             </p>
           </div>
         </div>
