@@ -24,7 +24,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* <Route exact path='/' element={< Login />}></Route> */}
+          <Route exact path='/' element={< Login />}></Route>
           <Route path='user/signup' element={< Signup />}></Route>
           {/* <Route path='user/login' element={< Login />}></Route> */}
           {/* <Route path='user/addLoan' element={< AddLoan />}></Route> */}
@@ -34,7 +34,7 @@ function App() {
           <Route path='user/addDocument' element={< AddDocument />}></Route> */}
 
           <Route path='admin/signup' element={< AdminSignup />}></Route>
-          <Route path='admin/login' element={< AdminLogin />}></Route>
+          {/* <Route path='admin/login' element={< AdminLogin />}></Route> */}
           {/* <Route path='admin/getAllLoans' element={< Dashboard />}></Route> */}
           {/* <Route path='admin/loanDetails' element={< LoanDetails />}></Route> */}
           {/* <Route path='admin/Accepted' element={< Accepted />}></Route> */}
