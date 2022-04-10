@@ -15,7 +15,7 @@ export default function Login() {
     const item = {
       "email": email,
       "password": pass
-    }
+    };
 
     console.log(item);
     let result = await fetch('http://localhost:54754/user/login', {
@@ -25,7 +25,7 @@ export default function Login() {
         "Content-Type": 'application/json',
         "Accept": 'application/json'
       }
-    })
+    });
 
     result = await result.json();
 
@@ -36,7 +36,7 @@ export default function Login() {
     } else {
       alert("Invalid User");
     }
-  }
+  };
 
   return (
     <div className="wrapper">
@@ -60,13 +60,13 @@ export default function Login() {
             </form>
           </div>
           <br />
-          <div className="not_a" style={{display:"grid",textAlign:"left"}}>
+          <div className="not_a" style={{ display: "grid", textAlign: "left" }}>
             <p >
               New here? &nbsp;
-              <Link to="/user/signup" style={{textDecoration : "none"}}>Signup</Link>
+              <Link to="/user/signup" style={{ textDecoration: "none" }}>Signup</Link>
             </p>
             <p>
-              Not a User? &nbsp; <Link to="/admin/login" style={{textDecoration : "none"}}>Admin Login</Link> <br />
+              Not a User? &nbsp; <Link to="/admin/login" style={{ textDecoration: "none" }}>Admin Login</Link> <br />
             </p>
           </div>
         </div>
