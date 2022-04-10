@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import User from '../admin/User';
+
 export default function Dashboard() {
 
   const navigate = useNavigate();
