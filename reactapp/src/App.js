@@ -1,7 +1,7 @@
 import './App.css';
-// import Login from "./components/user/Login";
+import Login from "./components/user/Login";
 import Signup from "./components/user/Signup";
-import AdminLogin from "./components/admin/Login";
+// import AdminLogin from "./components/admin/Login";
 import AdminSignup from "./components/admin/Signup";
 // import Dashboard from './components/admin/Dashboard';
 // import AddLoan from "./components/user/AddLoan";
